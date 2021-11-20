@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+
+  gcloud-k8s:
+    image: sebczu/personal:gcloud-k8s-0.0.1
+    container_name: gcloud-k8s
+    command:
+      - version
+    environment:
+      - CREDENTIAL=${CREDENTIAL}

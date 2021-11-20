@@ -1,1 +1,11 @@
-# gcloud-k8s
+### **GCLOUD+KUBECTL**
+
+#### 1. Build image
+```bash
+docker build -t sebczu/personal:gcloud-k8s-0.0.1 service
+```
+
+#### 2. Docker-compose run container
+```bash
+docker-compose -f docker/docker-compose.yml up
+```
