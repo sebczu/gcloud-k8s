@@ -14,6 +14,9 @@ docker-compose -f docker/docker-compose.yml up
 ```bash
 docker run \
 -e "CREDENTIAL={BASE_64_CREDENTIAL}" \
+-e "PROJECT=personal-331119" \
+-e "CLUSTER_NAME=template-gke-cluster" \
+-e "ZONE=europe-central2-a" \
 sebczu/personal:gcloud-k8s-0.0.1
 ```
 
@@ -21,6 +24,9 @@ sebczu/personal:gcloud-k8s-0.0.1
 ```bash
 docker run \
 -e "CREDENTIAL={BASE_64_CREDENTIAL}" \
+-e "PROJECT=personal-331119" \
+-e "CLUSTER_NAME=template-gke-cluster" \
+-e "ZONE=europe-central2-a" \
 sebczu/personal:gcloud-k8s-0.0.1 \
 "config view"
 ```
@@ -30,7 +36,10 @@ sebczu/personal:gcloud-k8s-0.0.1 \
 docker run -it \
 --entrypoint /bin/bash \
 -e "CREDENTIAL={BASE_64_CREDENTIAL}" \
-sebczu/personal:gcloud-k8s-0.0.1 
+-e "PROJECT=personal-331119" \
+-e "CLUSTER_NAME=template-gke-cluster" \
+-e "ZONE=europe-central2-a" \
+sebczu/personal:gcloud-k8s-0.0.1
 ```
 setup gcloud in container
 ```bash

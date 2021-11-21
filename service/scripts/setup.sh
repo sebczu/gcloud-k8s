@@ -1,6 +1,10 @@
 #!/bin/bash
 
+echo "PROJECT: $PROJECT"
+echo "CLUSTER_NAME: $CLUSTER_NAME"
+echo "ZONE: $ZONE"
+
 echo $CREDENTIAL | base64 -d > credential.json
 gcloud auth activate-service-account --key-file=credential.json
-# save credentials for kubectl
-gcloud container clusters get-credentials template-gke-cluster --zone europe-central2-a --project personal-331119
+# save credentials for kubectl (~/.kube/config)
+gcloud container clusters get-credentials $CLUSTER_NAME --zone $ZONE --project $PROJECT

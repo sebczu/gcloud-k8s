@@ -8,3 +8,6 @@ services:
       - version
     environment:
       - CREDENTIAL=${CREDENTIAL}
+      - PROJECT=personal-331119
+      - CLUSTER_NAME=template-gke-cluster
+      - ZONE=europe-central2-a
