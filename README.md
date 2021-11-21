@@ -22,7 +22,7 @@ sebczu/personal:gcloud-k8s-0.0.1
 docker run \
 -e "CREDENTIAL={BASE_64_CREDENTIAL}" \
 sebczu/personal:gcloud-k8s-0.0.1 \
-???
+"config view"
 ```
 
 #### 4. Docker run container (interactive mode)

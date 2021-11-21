@@ -8,9 +8,10 @@ cd /scripts
 source setup.sh
 
 gcloud version
+kubectl version
 
 COMMAND=$1
 echo "COMMAND: $COMMAND"
-gcloud $COMMAND
+kubectl $COMMAND
 
 echo "FINISHED"
