@@ -7,7 +7,8 @@ services:
     command:
       - version
     environment:
-      - CREDENTIAL=${CREDENTIAL}
+      - CREDENTIAL_GCLOUD=${CREDENTIAL_GCLOUD}
+      - CREDENTIAL_GITHUB=${CREDENTIAL_GITHUB}
       - PROJECT=personal-331119
       - CLUSTER_NAME=template-gke-cluster
       - ZONE=europe-central2-a

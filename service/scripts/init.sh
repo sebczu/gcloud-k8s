@@ -9,6 +9,7 @@ source setup.sh
 
 gcloud version
 kubectl version
+helm version
 
 COMMAND=$1
 echo "COMMAND: $COMMAND"
